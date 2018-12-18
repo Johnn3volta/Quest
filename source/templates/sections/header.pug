@@ -1,2 +1,38 @@
 header
   .header__top
+    .container.header__top__wrap
+      nav.nav__top.nav__top__left
+        - var navItems = ['Поддержка','Наши партнеры','Кредитование']
+        each  item in navItems
+          a.nav__link(href="#")=item
+      nav.nav__top.nav__top__right
+        a.nav__link(href="#")
+          i.fa.fa-map-marker(aria-hidden="true")
+          span.marker Москва
+        a.nav__link(href="#")
+          i.fa.fa-user-o(aria-hidden="true")
+          span.cabinet Вход в личный кабинет
+        a.nav__link(href="#")
+          i.fa.fa-shopping-cart(aria-hidden="true")
+          span.cart 0
+        a.nav__link(href="#"): i.fa.fa-search(aria-hidden="true")
+  .header_bottom
+    .container
+      nav.nav.nav_bottom
+        -var navBottomItems = ['Терминалы','ПОС-системы','Кассовое ПО','М-Пос','Эквайринг']
+        each item in navBottomItems
+          a.nav__link(href="#")=item
+      .header__bottom__wrap
+        .header__bottom__wrap-left
+          h1 Доступные платежные решения для Вашего Бизнеса
+          button.button.header__button подбор решения
+          .carusel__arrows
+            span: i.fa.fa-chevron-left(aria-hidden="true")
+            span: i.fa.fa-chevron-right(aria-hidden="true")
+        .header__bottom__wrap-right
+          .carusel__block
+            img.carusel__picture(src="images/terminal.png")
+          img.logo(src="images/logo.png")
+
+
+

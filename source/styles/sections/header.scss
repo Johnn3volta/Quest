@@ -1,0 +1,54 @@
+header {
+  background: #fff url("/images/header-image.jpg") center/cover no-repeat;
+}
+
+.header__top {
+  border-bottom: 1px solid #c0cfdb;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.nav__top {
+  padding: 22px 0;
+  font-size: 1rem;
+
+  .nav__link {
+    color: $color-main;
+    transition: .3s;
+
+    &:hover{
+      color: darken($color-main,40%);
+      //text-decoration: underline;
+    }
+  }
+
+  &__left {
+    .nav__link {
+      padding-right: 50px;
+
+      &:last-child{
+        padding-right: 0;
+      }
+    }
+
+
+  }
+
+  &__right{
+    .nav__link{
+      padding-left: 50px;
+
+      &:first-child{
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+.nav__link {
+  text-decoration: none;
+}
