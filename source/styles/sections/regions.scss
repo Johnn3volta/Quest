@@ -1,0 +1,20 @@
+.regions{
+  position: relative;
+  background: url("/images/fon-under-map.jpg") center/cover no-repeat;
+
+  h2{
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: $color-second;
+    font-family: $ff-main-headers;
+  }
+
+  &__picture{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+}

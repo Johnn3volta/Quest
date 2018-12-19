@@ -45,6 +45,8 @@ gulp.task('styles:compile', function(){
 /* -------- JS ---------*/
 gulp.task('js', function(){
   return gulp.src([
+    './source/js/jquery.js',
+    './node_modules/owl.carousel/dist/owl.carousel.js',
     './source/js/main.js',
   ])
   .pipe(sourcemaps.init())
@@ -58,7 +60,7 @@ gulp.task('js', function(){
 gulp.task('sprite', function(cb){
   const spriteData = gulp.src('source/images/icons/*.png').pipe(spritesmith({
     imgName : 'sprite.png',
-    imgPath : 'images/sprite.png',
+    imgPath : '/images/sprite.png',
     cssName : 'sprite.sass',
   }));
   spriteData.img.pipe(gulp.dest('build/images/'));

@@ -14,25 +14,25 @@ header
           span.cabinet Вход в личный кабинет
         a.nav__link(href="#")
           i.fa.fa-shopping-cart(aria-hidden="true")
-          span.cart 0
+          span.cart-count 0
         a.nav__link(href="#"): i.fa.fa-search(aria-hidden="true")
-  .header_bottom
-    .container
-      nav.nav.nav_bottom
+  .container
+    .header_bottom
+      nav.nav.nav__bottom
         -var navBottomItems = ['Терминалы','ПОС-системы','Кассовое ПО','М-Пос','Эквайринг']
         each item in navBottomItems
           a.nav__link(href="#")=item
-      .header__bottom__wrap
-        .header__bottom__wrap-left
-          h1 Доступные платежные решения для Вашего Бизнеса
-          button.button.header__button подбор решения
-          .carusel__arrows
-            span: i.fa.fa-chevron-left(aria-hidden="true")
-            span: i.fa.fa-chevron-right(aria-hidden="true")
-        .header__bottom__wrap-right
-          .carusel__block
-            img.carusel__picture(src="images/terminal.png")
-          img.logo(src="images/logo.png")
+
+    .header__bottom__wrap
+      .header__bottom__wrap-left
+        h1 Доступные платежные решения для Вашего Бизнеса
+        button.button.header__button(type="button") подбор решения
+      .header__bottom__wrap-right
+        #header-carousel.owl-carousel.header-carousel
+          img.carousel__picture(src="images/terminal.png" alt="alt")
+          img.carousel__picture(src="images/terminal.png" alt="alt")
+          img.carousel__picture(src="images/terminal.png" alt="alt")
+        img.logo(src="images/logo.png" alt="alt")
 
 
 
