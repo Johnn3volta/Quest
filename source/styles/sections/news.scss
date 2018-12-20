@@ -13,12 +13,20 @@
     display: flex;
     justify-content: space-between;
     margin-top: 55px;
+
+    @media (max-width: 1024px) {
+      justify-content: space-around;
+    }
   }
 
   &__item {
     width: 32%;
     position: relative;
     box-shadow: 0 0.625rem 2rem 0.625rem #e9edf4;
+
+    @media (max-width: 1024px) {
+      width: 30%;
+    }
   }
 
   &__picture {

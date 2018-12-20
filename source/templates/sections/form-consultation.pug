@@ -1,0 +1,22 @@
+.popup
+    .popup__consultation
+        button.button.form__close(type="button") х
+        h2 Получить консультацию
+        p Оставьте свои контактные данные чтобы получить бесплатную консультацию нашего менеджера
+        form.form.form__consultation(action="post")
+            .form__inputs
+                .form__input
+                    select.select.left_radius
+                        option(value="Москва") Москва
+                .form__input
+                    input(type="text" placeholder="Наименование организации")
+                .form__input
+                    input.right_radius(type="tel" placeholder="Телефон")
+            .form__inputs
+                .form__input
+                    input.left_radius(type="text" placeholder="Планируемый оборот, руб.")
+                .form__input
+                    input(type="text" placeholder="Контактное лицо")
+                .form__input
+                    input.right_radius(type="email" placeholder="Электронная почта")
+            button.button.form__button(type="submit") Отправить

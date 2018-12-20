@@ -2,6 +2,14 @@
   position: relative;
   min-height: 410px;
 
+  @media (max-width: 1024px) {
+    height: 410px;
+  }
+
+  @media (max-width: 768px) {
+    height: 480px;
+  }
+
   &__wrap {
     @include centerer-xy();
     width: 90%;
@@ -12,6 +20,11 @@
     background: #ffffff;
     z-index: 1;
     margin-top: 60px;
+
+    @media (max-width: 1024px) {
+      margin-top: 0;
+    }
+
 
     h2 {
       font-size: 2rem;

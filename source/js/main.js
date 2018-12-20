@@ -9,4 +9,12 @@ $(document).ready(function(){
     autoplay: true,
     autoplayTimeout: 5000
   });
+
+  $('#consultation').click(function () {
+      $('.popup').show();
+  });
+
+  $('.form__close').click(function () {
+      $('.popup').hide();
+  })
 });
