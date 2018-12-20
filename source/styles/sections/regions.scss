@@ -10,6 +10,14 @@
     font-size: 2rem;
     color: $color-second;
     font-family: $ff-main-headers;
+
+    @media (max-width: 425px) {
+      font-size: 1.4rem;
+    }
+
+    @media (max-width: 3755px) {
+      margin-top: 0;
+    }
   }
 
   &__picture{

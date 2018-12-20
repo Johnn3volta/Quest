@@ -2,6 +2,10 @@
   background: #ffffff;
   padding: 80px 0 175px;
 
+  @media (max-width: 425px) {
+    padding: 20px 0 40px;
+  }
+
   h2 {
     font-size: 2rem;
     color: $color-second;
@@ -13,9 +17,14 @@
     display: flex;
     justify-content: space-between;
     margin-top: 55px;
+    flex-wrap: wrap;
 
     @media (max-width: 1024px) {
       justify-content: space-around;
+    }
+
+    @media (max-width: 425px) {
+      margin-top: 0;
     }
   }
 
@@ -26,6 +35,11 @@
 
     @media (max-width: 1024px) {
       width: 30%;
+    }
+
+    @media (max-width: 425px) {
+      width: 75%;
+      margin-top: 35px;
     }
   }
 

@@ -32,6 +32,10 @@ header {
   &__left {
     .nav__link {
       padding-right: 50px;
+      
+      @media (max-width: 375px) {
+        padding-right: 25px;
+      }
 
       &:last-child {
         padding-right: 0;
@@ -46,10 +50,15 @@ header {
     }
 
     .cabinet {
+
+      @media (max-width: 375px) {
+        display: none;
+      }
       &:after {
         content: "\f107";
         font-family: FontAwesome;
         padding-left: 5px;
+        display: block;
       }
     }
 
@@ -68,6 +77,10 @@ header {
 
       @media (max-width: 425px) {
         padding-left: 15px;
+      }
+
+      @media (max-width: 375px) {
+        width: 30%;
       }
 
       &:first-child {
@@ -97,6 +110,12 @@ header {
 
     &:hover {
       color: lighten($color-second, 15%)
+    }
+
+    @media (max-width: 425px) {
+      width: 30%;
+      text-align: center;
+      padding-bottom: 10px;
     }
   }
 
