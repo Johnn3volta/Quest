@@ -1,0 +1,94 @@
+.order {
+  background: #888888;
+  padding: 80px 0;
+
+  &__wrap {
+    &-all {
+      background: #ffffff;
+    }
+
+    &-content {
+      display: flex;
+      justify-content: space-between;
+    }
+
+
+  }
+
+  &__text {
+    font-size: 1.5em;
+    font-family: $ff-main-regular;
+    margin-bottom: 15px;
+  }
+}
+
+.check {
+  padding: 40px 40px;
+  box-shadow: 0 0.625rem 2rem 0.625rem #e9edf4;
+
+
+  &__wrap {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e9eff4;
+  }
+
+  &__table {
+    margin-top: 23px;
+  }
+
+  &__header {
+    font-size: 0.9rem;
+    font-family: opensans;
+    color: $color-main;
+
+    th{
+      padding-right: 5px;
+      padding-bottom: 5px;
+      font-weight: bold;
+    }
+  }
+
+  &__small{
+    td{
+      font-size: 0.85rem;
+      font-family: opensans;
+      color: #c4cace;
+      padding-bottom: 5px;
+    }
+  }
+
+  &__medium{
+    td{
+      font-size: 1.1rem;
+      font-family: opensans;
+      color: $color-main;
+      //font-weight: bold;
+    }
+  }
+
+  &__link{
+    font-family: $ff-main-regular;
+    color: $color-second;
+    font-size: .875rem;
+    display: block;
+    margin-top: 20px;
+
+    &:hover{
+      color: lighten($color-second,10%);
+    }
+  }
+
+  &__final{
+    display: block;
+    margin-top: 22px;
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+    color: $color-main;
+  }
+
+  &__summa{
+    font-family: opensans;
+    color: $color-main;
+    font-size: 1.3rem;
+  }
+}

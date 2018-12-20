@@ -23,6 +23,12 @@
 }
 
 @font-face {
+  font-family: "OpenSansLight";
+  src: url("/fonts/opensans-light.woff") format("woff"),
+  url("/fonts/opensans-light.woff2") format("woff2");
+}
+
+@font-face {
   font-family: "MetaBoldCyrLF-Roman";
   src: url("/fonts/metaboldlfroman.woff2") format("woff2"),
   url("/fonts/metaboldlfroman.woff") format("woff");

@@ -5,7 +5,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 9999;
   overflow: hidden;
 
@@ -26,6 +26,7 @@
     font-family: $ff-main-headers;
     color: $color-main;
   }
+
   p {
     font-size: 1rem;
     color: $color-main;
@@ -61,12 +62,15 @@
   }
 
   &__input {
+    position: relative;
+
     input, select {
       width: 280px;
-      height: 60px;
-      padding-left: 20px;
+      padding: 30px 10px 20px 13px;
       border: 1px solid #c0cfdb;
       margin: 0;
+      font-size: 1.125rem;
+      font-family: $ff-main-regular;
     }
 
     .right_radius {
@@ -77,6 +81,41 @@
     .left_radius {
       border-radius: 3px;
       border-right: none;
+    }
+
+
+
+    .fa {
+      @include centerer-y();
+      right: 20px;
+      pointer-events: none;
+      color: #97a4b1;
+    }
+
+    .select {
+
+      appearance: none;
+      padding: 33px 10px 20px 13px;
+
+      option {
+        padding: 25px 10px;
+      }
+
+      ::-ms-expand {
+        display: none;
+      }
+
+      &__label {
+        position: absolute;
+        top: 18px;
+        padding-left: 17px;
+        transform: scale(.69);
+        transform-origin: left top;
+        color: #97a4b1;
+        font-size: 1rem;
+
+
+      }
     }
   }
 
@@ -91,5 +130,17 @@
   }
 }
 
+.input__label {
+  @include centerer-y();
+  color: #97a4b1;
+  padding-left: 20px;
+  pointer-events: none;
+}
+
+.has-content{
+  transform: scale(.69);
+  transform-origin: left top;
+  top: 20px;
+}
 
 
