@@ -29,6 +29,7 @@
 
   &__product {
     box-shadow: 0 0.625rem 2rem 0.625rem #e9edf4;
+    cursor: pointer;
 
     @media (max-width: 1024px) {
       width: 45%;

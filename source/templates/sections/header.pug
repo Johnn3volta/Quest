@@ -1,37 +1,52 @@
 header
-  .header__top
-    .container.header__top__wrap
-      nav.nav__top.nav__top__left
-        - var navItems = ['Поддержка','Наши партнеры','Кредитование']
-        each  item in navItems
-          a.nav__link(href="#")=item
-      nav.nav__top.nav__top__right
-        a.nav__link(href="#" title="Место положения")
-          i.fa.fa-map-marker(aria-hidden="true")
-          span.marker Москва
-        a.nav__link(href="#" title="Личный кабинет")
-          i.fa.fa-user-o(aria-hidden="true")
-          span.cabinet Вход в личный кабинет
-        a.nav__link(href="#" title="Корзина")
-          i.fa.fa-shopping-cart(aria-hidden="true")
-          span.cart-count 0
-        a.nav__link(href="#" title="Поиск"): i.fa.fa-search(aria-hidden="true")
-  .container
-    .header_bottom
-      nav.nav.nav__bottom
-        -var navBottomItems = ['Терминалы','ПОС-системы','Кассовое ПО','М-Пос','Эквайринг']
-        each item in navBottomItems
-          a.nav__link(href="#")=item
+    .header__top
+        .container.header__top__wrap
+            nav.nav__top.nav__top__left
+                - var navItems = ['Поддержка','Наши партнеры','Кредитование']
+                each  item in navItems
+                    a.nav__link(href="#")=item
+            nav.nav__top.nav__top__right
+                a.nav__link(href="#" title="Место положения")
+                    i.fa.fa-map-marker(aria-hidden="true")
+                    span.marker Москва
+                a.nav__link(href="#" title="Личный кабинет")
+                    i.fa.fa-user-o(aria-hidden="true")
+                    span.cabinet Вход в личный кабинет
+                a.nav__link(href="#" title="Корзина")
+                    i.fa.fa-shopping-cart(aria-hidden="true")
+                    span.cart-count 0
+                a.nav__link(href="#" title="Поиск"): i.fa.fa-search(aria-hidden="true")
+    .container
+        .header_bottom
+            nav.nav.nav__bottom
+                -var navBottomItems = ['Терминалы','ПОС-системы','Кассовое ПО','М-Пос','Эквайринг']
+                each item in navBottomItems
+                    a.nav__link(href="#")=item
 
-    .header__bottom__wrap
-      .header__bottom__wrap-left
-        h1 Доступные платежные решения для Вашего Бизнеса
-        button.button.header__button(type="button") подбор решения
-      .header__bottom__wrap-right
-        #header-carousel.owl-carousel.header-carousel
-          img.carousel__picture(src="images/terminal.png" alt="alt")
-          img.carousel__picture(src="images/terminal.png" alt="alt")
-          img.carousel__picture(src="images/terminal.png" alt="alt")
+        #header-carousel.header__bottom__wrap.owl-carousel.header-carousel
+            .header__bottom-item
+                .header__bottom__wrap-left
+                    h1 Доступные платежные решения для Вашего Бизнеса
+                    button.button.header__button(type="button") подбор решения
+                .header__bottom__wrap-right
+                    .header-carousel
+                        img.carousel__picture(src="images/terminal.png" alt="alt")
+
+            .header__bottom-item
+                .header__bottom__wrap-left
+                    h1 Доступные платежные решения для Вашего Бизнеса 2
+                    button.button.header__button(type="button") подбор решения
+                .header__bottom__wrap-right
+                    .header-carousel
+                        img.carousel__picture(src="images/terminal.png" alt="alt")
+
+            .header__bottom-item
+                .header__bottom__wrap-left
+                    h1 Доступные платежные решения для Вашего Бизнеса 3
+                    button.button.header__button(type="button" ) подбор решения
+                .header__bottom__wrap-right
+                    .header-carousel
+                        img.carousel__picture(src="images/terminal.png" alt="alt")
         img.logo(src="images/logo.png" alt="alt")
 
 
