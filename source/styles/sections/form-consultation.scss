@@ -97,10 +97,6 @@
       appearance: none;
       padding: 33px 10px 20px 13px;
 
-      option {
-        padding: 25px 10px;
-      }
-
       ::-ms-expand {
         display: none;
       }
@@ -113,8 +109,6 @@
         transform-origin: left top;
         color: #97a4b1;
         font-size: 1rem;
-
-
       }
     }
   }

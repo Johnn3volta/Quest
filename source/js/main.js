@@ -24,7 +24,7 @@ $(document).ready(function(){
   inputEvents();
 
   function inputEvents(){
-    var inp = '.form input';
+    var inp = 'form input';
 
     $(inp).focusin(function(){
 
@@ -44,7 +44,7 @@ $(document).ready(function(){
     });
   }
 
-  $('.form select').change(function(){
+  $('form select').change(function(){
     var th = $(this),
         label = th.parent().find('label');
 

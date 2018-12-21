@@ -1,10 +1,12 @@
 .order {
-  background: #888888;
-  padding: 80px 0;
+  padding:0 0 80px;
+
+  border-top:  1px solid black;
 
   &__wrap {
     &-all {
       background: #ffffff;
+      padding-left: 200px;
     }
 
     &-content {
@@ -12,21 +14,142 @@
       justify-content: space-between;
     }
 
+  }
+
+  h2 {
+    font-family: $ff-main;
+    color: $color-main;
+    padding-top: 25px;
+  }
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e9eff4;
+    margin-bottom: 40px;
 
   }
 
   &__text {
-    font-size: 1.5em;
+    font-size: 1.1rem;
     font-family: $ff-main-regular;
     margin-bottom: 15px;
     color: $color-main;
+  }
+
+  &__link-top a {
+    font-family: $ff-main-regular;
+    color: $color-second;
+    font-size: .75rem;
+    display: block;
+    font-weight: bold;
+    transition: .3s;
+
+    &:hover {
+      color: lighten($color-second, 10%);
+    }
+  }
+
+  .hint {
+    @include centerer-x();
+    padding-top: 10px;
+    color: red;
+    opacity: 0;
+  }
+
+  &__input {
+    width: 550px;
+    position: relative;
+    margin-bottom: 40px;
+
+    input, select, textarea {
+      width: 100%;
+      border: 1px solid #c0cfdb;
+      padding: 15px 20px 8px;
+      margin: 0;
+      font-size: 1.125rem;
+      font-family: $ff-main-regular;
+
+      &:focus {
+        &:invalid {
+          outline: none;
+        }
+      }
+
+      &:invalid {
+        border-color: red;
+        background: #fff url("/images/invalid.png") no-repeat 98% center;
+
+        & ~ .hint {
+          opacity: 1;
+        }
+      }
+
+    }
+
+    ::placeholder {
+      color: #97a4b1;
+    }
+
+    .fa {
+      @include centerer-y();
+      right: 20px;
+      pointer-events: none;
+      color: #97a4b1;
+    }
+  }
+
+  &__select {
+    appearance: none;
+    padding: 33px 10px 20px 13px;
+
+    ::-ms-expand {
+      display: none;
+    }
+  }
+
+  &__label {
+    @include centerer-y();
+    color: #97a4b1;
+    padding-left: 20px;
+    pointer-events: none;
+  }
+
+  .has-content {
+    transform: scale(.69);
+    transform-origin: left top;
+    top: 5px;
+    padding-left: 30px;
+  }
+
+  &__button {
+    background: #f82f39;
+    padding: 25px 50px;
+    color: #ffffff;
+    transition: .3s;
+
+    &:hover {
+      background: lighten(#f82f39, 10%);
+    }
+  }
+
+  &__link-bottom {
+    font-family: $ff-main-regular;
+    color: $color-second;
+    font-size: .8rem;
+    padding-left: 30px;
+    font-weight: bold;
+    transition: .3s;
+
+    &:hover {
+      color: lighten($color-second, 10%);
+    }
   }
 }
 
 .check {
   padding: 40px 40px;
   box-shadow: 0 0.625rem 2rem 0.625rem #e9edf4;
-
 
   &__wrap {
     padding-bottom: 20px;
@@ -42,15 +165,15 @@
     font-family: opensans;
     color: $color-main;
 
-    th{
+    th {
       padding-right: 5px;
       padding-bottom: 5px;
       font-weight: bold;
     }
   }
 
-  &__small{
-    td{
+  &__small {
+    td {
       font-size: 0.85rem;
       font-family: opensans;
       color: #c4cace;
@@ -58,28 +181,27 @@
     }
   }
 
-  &__medium{
-    td{
+  &__medium {
+    td {
       font-size: 1.1rem;
       font-family: opensans;
       color: $color-main;
-      //font-weight: bold;
     }
   }
 
-  &__link{
+  &__link {
     font-family: $ff-main-regular;
     color: $color-second;
     font-size: .875rem;
     display: block;
     margin-top: 20px;
 
-    &:hover{
-      color: lighten($color-second,10%);
+    &:hover {
+      color: lighten($color-second, 10%);
     }
   }
 
-  &__final{
+  &__final {
     display: block;
     margin-top: 22px;
     margin-bottom: 5px;
@@ -87,7 +209,7 @@
     color: $color-main;
   }
 
-  &__summa{
+  &__summa {
     font-family: opensans;
     color: $color-main;
     font-size: 1.3rem;

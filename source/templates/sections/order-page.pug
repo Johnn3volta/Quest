@@ -6,18 +6,18 @@ section.order
         .order__head
           .order__text: strong Контакты
           .order__link-top: a(href="#") Войдите, если покупали у нас раньше
-        form.order__form
+        form.order__form(action="#" method="post")
           .order__input
             input(type="text")
-            label.order__label
+            label.order__label Название организации
             span.hint подсказка
           .order__input
             input(type="text")
-            label.order__label
+            label.order__label Контактное лицо
             span.hint подсказка
           .order__input
             input(type="text")
-            label.order__label
+            label.order__label ИНН
             span.hint подсказка
           .order__input
             select.order__select
@@ -25,19 +25,20 @@ section.order
               option(value="Любой") Любой
               option(value="Любой") Любой
               option(value="Любой") Любой
-            label.order__label
+            label.order__label Выберите ближайший офис
+            i.fa.fa-angle-down( aria-hidden="true")
           .order__input
-            input(type="text")
-            label.order__label
+            input(type="email")
+            label.order__label Электронная почта
             span.hint подсказка
           .order__input
             input(type="text")
-            label.order__label
+            label.order__label Телефон
             span.hint подсказка
           .order__input
-            textarea.order__textarea(cols=8 rows=4)
+            textarea.order__textarea(cols=10 rows=6 placeholder="Комментарий к заказу")
             label.order__label
-          button.button.order__button подтвердить заказ
+          button.button.order__button(type="submit") подтвердить заказ
           a.order__link-bottom(href="#") Вернутся в корзину
 
 
