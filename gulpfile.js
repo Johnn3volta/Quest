@@ -14,7 +14,7 @@ const gulp         = require('gulp'),
 gulp.task('server', function(){
   browserSync.init({
     server : {
-      port : 9000,
+      port : 90000,
       baseDir : 'build',
     },
   });
